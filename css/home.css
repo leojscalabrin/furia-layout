@@ -1,0 +1,25 @@
+.home {
+    flex-direction: column;
+}
+
+.main-banner {
+    max-width: 100vw;
+    display: block;
+}
+
+.home__brands {
+    background: #000;
+    height: 91px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.brand {
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
