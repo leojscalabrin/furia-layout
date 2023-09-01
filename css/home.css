@@ -205,3 +205,15 @@
 .news {
   margin-bottom: 75px;
 }
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 34px;
+  right: 382px;
+  cursor: pointer;
+}
+
+.whatsapp-icon:hover {
+  opacity: 0.4;
+  transition-duration: 350ms;
+}
