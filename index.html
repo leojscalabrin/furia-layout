@@ -21,7 +21,7 @@
   </head>
 
   <body>
-    <header class="header container">
+    <header class="header container desktop">
       <div class="header__menu">
         <img
           class="header__menu--logo"
@@ -63,15 +63,74 @@
         </div>
       </div>
     </header>
+    <header class="header container mobile">
+      <div class="nav-mobile">
+        <div class="open-menu">
+          <img src="assets/mobile-menu.png" alt="Menu" />
+        </div>
+        <img
+          class="header__menu--logo"
+          src="assets/logo-furia.png"
+          alt="Logo Furia"
+        />
+
+        <img
+          class="header__nav--icon shopping-bag"
+          src="assets/bag.png"
+          alt="Carrinho"
+        />
+      </div>
+      <div class="mobile-search-wrapper">
+        <input class="mobile-search-bar" placeholder="Buscar" />
+        <button class="mobile-search-button">
+          <img src="assets/search.png" alt="Busca" />
+        </button>
+      </div>
+      <div class="mobile-menu hidden">
+        <div class="mobile-menu-close">X</div>
+        <div class="mobile-menu-logo-wrapper">
+          <img
+            class="mobile-menu-logo"
+            src="assets/logo-furia.png"
+            alt="Logo Furia"
+          />
+        </div>
+        <div class="mobile-menu-wrapper">
+          <div class="mobile-menu-item">
+            <img src="assets/user.png" alt="Login">
+            Minha Conta/Cadastrar
+          </div>
+          <div class="mobile-menu-item">
+            <img src="assets/favorite.png" alt="Meus Pedidos">
+            Meus Pedidos
+          </div>
+          <div class="mobile-menu-item">
+            <img src="assets/heart.png" alt="Favoritos">
+            Favoritos
+          </div>
+        </div>
+        <div class="mobile-menu-categories">
+          <div class="mobile-menu-category">Shop all</div>
+          <div class="mobile-menu-category">Shop all</div>
+        </div>
+      </div>
+    </header>
     <main class="home container">
-      <div class="home__main-banner-wrapper">
+      <div class="home__main-banner-wrapper desktop">
         <img
           class="main-banner"
           src="assets/Banner_HERO.png"
           alt="Banner Principal"
         />
       </div>
-      <div class="home__brands">
+      <div class="home__main-banner-wrapper mobile">
+        <img
+          class="main-banner"
+          src="assets/banner_HERO_mobile.png"
+          alt="Banner Principal"
+        />
+      </div>
+      <div class="home__brands desktop">
         <div class="brand rivalry">
           <img
             class="brand__logo"
@@ -126,8 +185,19 @@
           <h2 class="releases-title">Youtube</h2>
         </div>
         <iframe
+          class="desktop"
           width="889"
           height="500"
+          src="https://www.youtube.com/embed/-_1KSc48rxg?si=TbPm2GbQ3HtS0zLk"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <iframe
+          class="mobile"
+          width="367"
+          height="373"
           src="https://www.youtube.com/embed/-_1KSc48rxg?si=TbPm2GbQ3HtS0zLk"
           title="YouTube video player"
           frameborder="0"
@@ -161,7 +231,7 @@
               </div>
             </div>
           </div>
-          <div class="socials">
+          <div class="socials desktop">
             <img
               class="socials__icon"
               src="assets/Logo_facebook.png"
@@ -182,6 +252,24 @@
         </div>
         <div class="footer__middle">
           <div class="footer__info">
+            <div class="socials mobile">
+              <img
+                class="socials__icon"
+                src="assets/Logo_facebook.png"
+                alt="Facebook"
+              />
+              <img
+                class="socials__icon"
+                src="assets/Logo_youtube.png"
+                alt="Youtube"
+              />
+              <img class="socials__icon" src="assets/Logo_X.png" alt="X" />
+              <img
+                class="socials__icon"
+                src="assets/Logo_Twitch.png"
+                alt="Twitch"
+              />
+            </div>
             <div class="info-wrapper institucional">
               <h3 class="info-title">Institucional</h3>
 
@@ -237,8 +325,11 @@
         </div>
       </div>
     </footer>
-    <div class="whatsapp-icon">
+    <div class="whatsapp-icon desktop">
       <img src="assets/whatsapp-btn.png" alt="Botão Whatsapp" />
+    </div>
+    <div class="whatsapp-icon mobile">
+      <img src="assets/whatsapp_fixo.png" alt="Botão Whatsapp" />
     </div>
   </body>
   <script src="js/script.js" type="text/javascript"></script>

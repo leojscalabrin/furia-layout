@@ -208,12 +208,83 @@
 
 .whatsapp-icon {
   position: fixed;
-  bottom: 34px;
-  right: 382px;
+  bottom: 20px;
+  right: 56px;
   cursor: pointer;
 }
 
 .whatsapp-icon:hover {
   opacity: 0.4;
   transition-duration: 350ms;
+}
+
+@media screen and (max-width: 1024px) {
+  .brand.rivalry,
+  .brand.aoc,
+  .brand.legion,
+  .brand.nike {
+    display: none;
+  }
+
+  .overlay {
+    opacity: 1;
+    bottom: 94px;
+    left: -2px;
+  }
+
+  .overlay button {
+    width: 20px;
+    height: 20px
+  }
+
+  .whatsapp-icon.mobile {
+    bottom: 12px;
+    right: 16px;
+  }
+
+  .product-card {
+    max-height: 480px;
+    max-width: 160px;
+    margin: 0;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .price, .total-price {
+    font-size: 14px;
+    white-space: nowrap;
+    margin-right: 2px;
+  }
+
+  .product-image {
+    max-width: 150px;
+  }
+
+  .home__showcase {
+    position: relative;
+  }
+
+  .home__showcase::before {
+    content: "<";
+    color: #000;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 800;
+    left: -25px;
+  }
+
+  .home__showcase::after {
+    content: ">";
+    color: #000;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 800;
+    right: -25px;
+  }
+
+  .main-banner {
+    width: 100vw;
+  }
 }

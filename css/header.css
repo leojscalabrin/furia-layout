@@ -24,7 +24,7 @@
 
 .header__menu--category::after {
   content: "";
-  border-bottom: 4px solid #0D0C0C;8;
+  border-bottom: 4px solid #0d0c0c;
   width: 100%;
   position: absolute;
   bottom: -16px;
@@ -126,7 +126,7 @@
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  color: #0D0C0C;
+  color: #0d0c0c;
   margin-right: 10px;
 }
 
@@ -138,4 +138,133 @@
   right: 6px;
   position: absolute;
   background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .header.mobile {
+    flex-direction: column;
+    margin-top: 15px;
+    height: 84px;
+  }
+
+  .header__menu--logo {
+    width: 50px;
+  }
+
+  .mobile-search-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .mobile-search-bar {
+    width: 100%;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #b0b0b0;
+  }
+
+  .mobile-search-button {
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .open-menu {
+    padding-left: 8px;
+  }
+
+  .shopping-bag {
+    width: 30px;
+  }
+
+  .mobile-menu.hidden {
+    display: none;
+  }
+
+  .close {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 1;
+  }
+
+  .mobile-menu-close {
+    position: absolute;
+    right: 10px;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0em;
+  }
+
+  .mobile-menu-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #828282;
+  }
+
+  .mobile-menu-logo {
+    width: 50px;
+    margin-bottom: 15px;
+  }
+
+  .mobile-menu-wrapper {
+    padding: 15px 0 15px 25px;
+    border-bottom: 1px solid #828282;
+  }
+
+  .mobile-menu-item {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    margin: 10px 0;
+  }
+
+  .mobile-menu-item img {
+    margin-right: 5px;
+    width: 20px;
+  }
+
+  .mobile-menu-category {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px 0 15px 25px;
+  }
 }
