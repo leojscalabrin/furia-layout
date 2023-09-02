@@ -19,10 +19,22 @@
   line-height: 21px;
   letter-spacing: 0em;
   text-align: left;
+  position: relative;
 }
 
-.header__menu--category:hover {
-  text-decoration: underline;
+.header__menu--category::after {
+  content: "";
+  border-bottom: 4px solid #0D0C0C;8;
+  width: 100%;
+  position: absolute;
+  bottom: -16px;
+  right: 0;
+  display: none;
+}
+
+.header__menu--category:hover::after {
+  display: flex;
+  transition-duration: 350ms;
 }
 
 .header__menu--logo {
